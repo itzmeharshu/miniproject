@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+:root {
+    --primary: #094b65;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #b4d9f7;
+    min-height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#header .logo {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: var(--primary);
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: var(--primary);
+    color: #fff;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--primary), transparent);
+    z-index: 10;
+}
+
+section img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section #text {
+    position: absolute;
+    color: var(--primary);
+    font-size: 10vw;
+    text-align: center;
+    line-height: .55em;
+    font-family: 'Rancho', cursive;
+    transform: translatey(-50%);
+}
+
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #fff;
+    color: var(--primary);
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translatey(100px);
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: var(--primary);
+}
+
+.sec .h21 {
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+}
+
+footer {
+    position: relative;
+    padding: 0px 100px;
+    background: var(--primary);
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;1,400");
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: #111;
+  
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.item {
+  position: relative;
+  flex: calc(100vw / 6) 1 1;
+  background-size: cover;
+  overflow: hidden;
+  filter: saturate(90%);
+  transition: 1s;
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(25deg, rgba(0,0,0,.9), rgba(0,0,0,0));
+}
+
+.item:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  animation: borderPulse 5s infinite;
+  
+  @media (min-width: 1024px) {
+    border-right: 1px solid #ccc;
+    border-bottom: none;
+  }
+}
+
+.item:hover {
+  flex-basis: 40%;
+  filter: saturate(120%);
+  
+  @media (min-width: 1024px) {
+    flex-basis: 75%;
+  }
+  
+  .quote {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.item:nth-child(1) {
+  background-image: url("https://media.istockphoto.com/id/598241944/photo/honey-in-jar-and-bunch-of-dry-lavender.jpg?s=612x612&w=0&k=20&c=gVg1BaJ78uniQbpfdFiYvMzim98gREdx-5c4ENBp2tE=");
+  background-position: 72% 35%;
+}
+
+.item:nth-child(2) {
+  background-image: url("https://www.allaboutgardening.com/wp-content/uploads/2022/11/fast-growing-fruit-trees-1.jpeg");
+  background-position: 60% 8%;
+}
+
+.item:nth-child(3) {
+  background-image: url("https://cdn.britannica.com/90/236590-050-27422B8D/Close-up-of-mushroom-growing-on-field.jpg");
+  background-position: 52% 8%;
+}
+
+.item:nth-child(4) {
+  background-image: url("https://marathonhandbook.com/wp-content/uploads/Is-Palm-Oil-Bad-For-You.jpg");
+  background-position: 45% 8%;
+}
+
+.item:nth-child(5) {
+  background-image: url("https://blog.billyoh.com/wp-content/uploads/2016/04/shutterstock_234027424-1.jpg");
+  background-position: 45% 25%;
+}
+
+.item:nth-child(6) {
+  background-image: url("https://img.freepik.com/free-photo/rubber-tree-bowl-filled-with-latex_1150-10344.jpg?w=2000");
+  background-position: 65% 2%;
+}
+
+.quote {
+  position: absolute;
+  color: #fff;
+  bottom: 35%;
+  left: 5rem;
+  width: calc(100% - 10rem);
+  opacity: 0;
+  transition: 1s;
+  transform: translateX(50%);
+  
+  @media (min-width: 512px) {
+    left: 15%;
+    bottom: 35%;
+    width: 20vw;
+  }
+  
+  @media (min-width: 1024px) {
+    left: 15%;
+    bottom: 35%;
+    width: 30vw;
+  }
+  
+  p {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.7rem;
+    font-size: 1.4rem;
+    text-wrap: balance;
+    font-style: italic;
+    
+    &:before, &:after {
+      position: absolute;
+      font-size: 5.5rem;
+      opacity: .6;
+    }
+    
+    &:before {
+      content: "“";
+      top: 4rem;
+      left: -2rem;
+      transform: translate(-100%, -100%);
+    }
+    
+    &:after {
+      content: "”";
+      bottom: 2rem;
+      right: -2rem;
+      transform: translate(100%, 100%);
+    }
+  }
+  
+  span {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transform: translate(4rem, 100%);
+    
+    &:before {
+      content: "—";
+      margin-right: .7rem;
+    }
+  }
+}
+
+@keyframes borderPulse{
+  0%, 100% { border-color: rgba(204, 204, 204, 1); }
+  25%, 75% { border-color: rgba(204, 204, 255, 0.9); }
+  50% { border-color: rgba(204, 204, 255, 0.5); }
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width:50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+  }
+  .map{
+    width:25%;
+    float: left;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column1 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column1, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .sub{
+    text-align: center;
+    margin:auto 40%;
+  }

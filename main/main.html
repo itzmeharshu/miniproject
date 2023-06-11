@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> mini project</title>
+  <link rel="stylesheet" href="css1/style1.css">
+
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Forest</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 class="h21" id="text">Forest products</h2>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png" id="bird1">
+        <img src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png" id="bird2">
+        <img src="https://user-images.githubusercontent.com/65358991/170092559-883fe071-eb4f-4610-8c8b-a037d061c617.png" id="forest">
+        
+        <a href="#" id="btn">Explore</a>
+        
+        <img src="https://user-images.githubusercontent.com/65358991/170092605-eada6510-d556-45cc-b7fa-9e4d1d258d26.png" id="rocks">
+        <img src="https://user-images.githubusercontent.com/65358991/170092616-5a70c4af-2eed-496f-bde9-b5fcc7142a31.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2 class="h21"><center>FEW FOREST PRODUCTS</center></h2>
+    </div>
+    
+    
+    <div class="container">
+        <div class="item">
+          <div class="quote">
+            <p>Honey is a sweet and viscous substance made by several bees, the best-known of which are honey bees. Honey is made and stored to nourish bee colonies. Bees produce honey by gathering and then refining the sugary secretions of plants (primarily floral nectar) or the secretions of other insects, like the honeydew of aphids.<span>Honey</span></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>Fruits are the means by which flowering plants disseminate their seeds. Edible fruits in particular have long propagated using the movements of humans and animals in a symbiotic relationship that is the means for seed dispersal for the one group and nutrition for the other; in fact, humans and many animals have become dependent on fruits as a source of food.&nbsp;<span>Fruits</span></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>A mushroom or toadstool is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source. Toadstool generally denotes one poisonous to humans.<span>Mushroom</span></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>Palm oil is an edible vegetable oil derived from the mesocarp (reddish pulp) of the fruit of the oil palms.The oil is used in food manufacturing, in beauty products, and as biofuel. Palm oil accounted for about 33% of global oils produced from oil crops in 2014.<span>Palm oil</span></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>In botany, a tree is a perennial plant with an elongated stem, or trunk, usually supporting branches and leaves. In some usages, the definition of a tree may be narrower, including only woody plants with secondary growth, plants that are usable as lumber or plants above a specified height. In wider definitions, the taller palms, tree ferns, bananas, and bamboos are also trees.<span>Trees</span></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="quote">
+            <p>Rubber, also called India rubber, latex, Amazonian rubber, caucho, or caoutchouc, as initially produced, consists of polymers of the organic compound isoprene, with minor impurities of other organic compounds. Thailand, Malaysia, and Indonesia are three of the leading rubber producers.
+      
+      Types of polyisoprene that are used as natural rubbers are classified as elastomers.<span>Rubber</span></p>
+          </div>
+        </div>
+      </div>
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+
+<div class="container1">
+    <div style="text-align:center">
+      <h2>Contact Us</h2>
+      <p>Swing by for a cup of coffee, or leave us a message:</p>
+    </div>
+    <div class="row1">
+
+        <img class="map" src="https://images.unsplash.com/photo-1501276276428-88ec0b385919?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9hZHdheXN8ZW58MHx8MHx8fDA%3D&w=1000&q=80" style="width:100%">
+      <div class="column">
+        <form action="#">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" placeholder="country">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input class="sub" type="submit" value="Submit" id="btn">
+        </form>
+      </div>
+    </div>
+  </div>
+</html>
